@@ -1,0 +1,139 @@
+/*页面重定义*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+/*  -webkit-touch-callout: none; !* iOS Safari *!*/
+
+/*  -webkit-user-select: none; !* Chrome/Safari/Opera *!*/
+
+/*  -khtml-user-select: none; !* Konqueror *!*/
+
+/*  -moz-user-select: none; !* Firefox *!*/
+
+/*  -ms-user-select: none; !* Internet Explorer/Edge *!*/
+
+/*  user-select: none; !* Non-prefixed version, currently*/
+
+/*not supported by any browser *!*/
+}
+html{
+  width: 100%;
+  min-width: 1200px;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  background: #f8f3ef;
+}
+body{
+  padding: 0;
+  margin: 0 auto;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+form,
+blockquote {
+  margin: 0;
+}
+
+ul,
+ol,
+li,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none outside none;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #cccccc;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+::-webkit-scrollbar {
+  width: 8px; /*对垂直流动条有效*/
+  height: 8px;
+}
+::-webkit-scrollbar-track{
+  background-color: rgba(218,223,230,.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background: #dadfe6;
+
+}
+
+.container{
+  clear: both;
+  width: 1200px;
+  /*设置页面主要内容宽度*/
+  margin: auto;
+  height: auto;
+  /*overflow: hidden;*/
+  background-color: inherit;
+  font-size: 0;
+}
+/*页面重定义.end*/
+
+/* element-ui重定义 */
+ /* 日期范围选择 */
+.el-date-editor--daterange.el-input__inner{
+  width: 290px !important;
+}
+.el-date-editor .el-range-separator{
+  width: 10% !important;
+}
+/* 主题类型按钮 */
+
+/* 分页器 */
+.el-pagination{
+  padding: 30px 0!important;
+  text-align: center!important;
+}
+.form{
+  width: 100%;
+  max-width: 910px;
+  height: auto;
+  padding: 50px 0;
+}
+.el-upload-dragger{
+  width: auto;
+  height: auto;
+  min-width: 360px;
+  max-width: 760px;
+  min-height: 180px;
+}
+.img, .video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.video-js .vjs-big-play-button,.video-js .vjs-control-bar{
+  width: 0;
+  height: 0;
+  border: none;
+  overflow: hidden;
+}
